@@ -1,217 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aiden Carter | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/a2e0f6ad0b.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!-- PRELOADER -->
-    <!-- PRELOADER -->
-    <div id="preloader">
-      <div class="preloader-logo">
-        <span class="logo-text">AJ</span>
-      </div>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>JopehDeveloper | Senior Web & Minecraft Developer</title>
+    <meta name="description" content="Portofolio Resmi JopehDeveloper. Ahli dalam Front-end, Back-end, Minecraft Server Development, dan Bot Discord. Lihat karya terbaik saya di sini.">
+    <meta name="keywords" content="JopehDeveloper, Web Developer, Minecraft Developer, Portfolio, Frontend, Backend">
+    <meta name="author" content="JopehDeveloper">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="JopehDeveloper Portfolio">
+    <meta property="og:description" content="Web & Minecraft Developer Profesional.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/red/white?text=JopehDev"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#EF4444', // Red-500
+                        dark: '#111827',    // Gray-900
+                        darker: '#0B0F19',
+                        accent: '#1F2937',  // Gray-800
+                    },
+                    fontFamily: {
+                        sans: ['Open Sans', 'sans-serif'],
+                        heading: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "JopehDeveloper",
+      "url": "https://jopehdev.my.id",
+      "sameAs": [
+        "https://instagram.com/username",
+        "https://github.com/username"
+      ],
+      "jobTitle": "Senior Front-end Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "MappleID"
+      }  
+    }
+    </script>
+
+    <style>
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #111827; }
+        ::-webkit-scrollbar-thumb { background: #EF4444; border-radius: 4px; }
+        
+        /* Loader Animation */
+        .loader-bg {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: #0B0F19; z-index: 9999; display: flex;
+            justify-content: center; align-items: center; flex-direction: column;
+            transition: opacity 0.5s ease, visibility 0.5s;
+        }
+        .loader-hidden { opacity: 0; visibility: hidden; }
+    </style>
+</head>
+<body class="bg-dark text-gray-300 font-sans antialiased overflow-x-hidden">
+
+    <div id="loader" class="loader-bg">
+        
+        <h2 class="mt-4 text-2xl font-heading font-bold text-primary tracking-widest animate-pulse">LOADING...</h2>
     </div>
 
-    <!-- Header -->
-    <header>
-      <div class="logo">A<span>J</span></div>
-      <nav class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="menu-toggle"><i class="fas fa-bars"></i></div>
-    </header>
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <img src="https://via.placeholder.com/50/EF4444/FFFFFF?text=JP" alt="Logo" class="h-10 w-10 rounded-full border-2 border-primary">
+                    <span class="text-white font-heading font-bold text-xl tracking-wide">ImJopeh</span>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-primary font-bold px-3 py-2 rounded-md text-sm font-heading">Home</a>
+                        <a href="#about-preview" class="hover:text-primary transition px-3 py-2 rounded-md text-sm font-heading">About</a>
+                        <a href="#portfolio-preview" class="hover:text-primary transition px-3 py-2 rounded-md text-sm font-heading">Portfolio</a>
+                        <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-full font-bold hover:bg-red-700 transition text-sm font-heading">Contact</a>
+                    </div>
+                </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Hi, I’m <span>Aiden Carter</span></h1>
-        <p>Web Developer & Digital Designer</p>
-        <a href="#portfolio" class="btn">View My Work</a>
-      </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button onclick="toggleMenu()" class="text-gray-400 hover:text-white p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-accent p-4">
+            <a href="index.html" class="block px-3 py-2 text-white font-bold">Home</a>
+            <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-primary">About Me</a>
+            <a href="portfolio.html" class="block px-3 py-2 text-gray-300 hover:text-primary">Portfolio</a>
+            <a href="#contact" class="block px-3 py-2 text-primary font-bold">Contact</a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center">
+            
+            <div class="w-full md:w-1/2 text-center md:text-left mt-10 md:mt-0 z-10">
+                <p class="text-primary font-heading font-semibold tracking-wider mb-2">WELCOME TO MY WORLD</p>
+                <h1 class="text-4xl md:text-6xl font-heading font-extrabold text-white mb-4 leading-tight">
+                    Hi, I'm <span class="text-primary">JopehDeveloper</span>
+                </h1>
+                <p class="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed">
+                    Senior Front-end Developer & Minecraft Specialist. Saya membangun pengalaman digital yang interaktif, responsif, dan berkinerja tinggi.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="#contact" class="px-8 py-3 bg-primary text-white font-heading font-bold rounded-lg shadow-lg shadow-red-500/30 hover:bg-red-700 transition transform hover:-translate-y-1">Hire Me</a>
+                    <a href="portfolio.html" class="px-8 py-3 border border-gray-600 hover:border-primary text-white font-heading font-bold rounded-lg transition hover:text-primary">View Projects</a>
+                </div>
+            </div>
+
+            <div class="w-full md:w-1/2 flex justify-center z-10 relative">
+                <div class="absolute w-72 h-72 bg-primary/20 rounded-full blur-3xl -top-10 -right-10"></div>
+                
+                
+                <img src="https://via.placeholder.com/400x400/1F2937/EF4444?text=Jopeh+Logo" alt="Jopeh Developer" class="relative w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4 border-gray-800 shadow-2xl">
+            </div>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <!-- ABOUT SECTION -->
-    <section id="about" class="about">
-      <div class="about-container">
-        <div class="about-image">
-          <img
-            src="https://images.unsplash.com/photo-1603415526960-f7e0328d13a5"
-            alt="Aiden Carter Portrait"
-          />
+    <section id="about-preview" class="py-20 bg-accent/30">
+        <div class="max-w-5xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-heading font-bold text-white mb-6">About <span class="text-primary">Me</span></h2>
+            <p class="text-gray-400 mb-8 leading-relaxed max-w-2xl mx-auto">
+                Saya adalah pengembang yang berdedikasi dengan pengalaman bertahun-tahun dalam menciptakan solusi web dan server game. Fokus saya adalah pada kualitas kode, keamanan, dan pengalaman pengguna yang luar biasa.
+            </p>
+            <a href="about.html" class="inline-block px-6 py-2 border-b-2 border-primary text-white font-heading hover:text-primary transition">
+                Read Full Bio <i class="fas fa-arrow-right ml-2"></i>
+            </a>
         </div>
-        <div class="about-text">
-          <h2>About Me</h2>
-          <p>
-            I'm <span class="highlight">Aiden Carter</span>, a creative web
-            developer with a deep passion for crafting digital experiences that
-            blend aesthetic design with cutting-edge technology. I believe that
-            great websites are not just built — they’re designed with purpose,
-            emotion, and performance in mind.
-          </p>
-          <p>
-            Over the years, I’ve worked with startups and agencies to design and
-            develop responsive, high-performing websites. My focus lies in
-            creating experiences that are both visually stunning and
-            functionally seamless.
-          </p>
-
-          <div class="info-grid">
-            <div><strong>Location:</strong> New York, USA</div>
-            <div><strong>Email:</strong> aiden.carter@email.com</div>
-            <div><strong>Freelance:</strong> Available</div>
-            <div><strong>Experience:</strong> 4+ Years</div>
-          </div>
-
-          <a href="#contact" class="btn about-btn">Let’s Collaborate</a>
-        </div>
-      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-      <h2>Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <span class="year">2023 - Present</span>
-          <h3>Frontend Developer - Pixel Studio</h3>
-          <p>
-            Building interactive web experiences using React and GSAP with a
-            focus on speed and design harmony.
-          </p>
+    <section id="portfolio-preview" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-heading font-bold text-white">Selected <span class="text-primary">Works</span></h2>
+                <p class="text-gray-500 mt-2">Beberapa proyek unggulan yang telah saya kerjakan.</p>
+            </div>
+
+            <div class="bg-accent rounded-xl overflow-hidden shadow-xl hover:shadow-red-900/20 transition duration-300 border border-gray-800 max-w-3xl mx-auto">
+                <div class="relative">
+                    <img src="https://via.placeholder.com/800x400/111111/EF4444?text=Mapple+Project+Banner" class="w-full h-64 object-cover" alt="Mapple Project">
+                    <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded shadow">PROJEK UNGGULAN</div>
+                </div>
+                <div class="p-8 text-center">
+                    <h3 class="text-2xl font-heading font-bold text-white mb-2">Mapple Project</h3>
+                    <p class="text-gray-400 mb-6">Platform komunitas Minecraft terbesar dengan integrasi web dan bot discord yang seamless.</p>
+                    <a href="portfolio.html" class="px-6 py-3 bg-gray-700 hover:bg-primary text-white rounded-lg font-bold transition">Lihat Semua Proyek</a>
+                </div>
+            </div>
         </div>
-        <div class="timeline-item">
-          <span class="year">2021 - 2023</span>
-          <h3>Web Designer - Freelance</h3>
-          <p>
-            Created custom websites for small businesses and personal brands,
-            emphasizing mobile-first design.
-          </p>
-        </div>
-      </div>
     </section>
 
-    <!-- Skills Section -->
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="skills">
-      <h2>My Expertise</h2>
-      <p class="skills-subtext">
-        A strong foundation in front-end development, with a focus on building
-        clean, scalable, and interactive interfaces.
-      </p>
+    <section id="contact" class="py-20 bg-darker">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-heading font-bold text-white text-center mb-12">Get In <span class="text-primary">Touch</span></h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+                <div class="space-y-4">
+                    <h3 class="text-xl text-white font-heading font-semibold mb-4">Connect with me</h3>
+                    
+                    <a href="#" class="flex items-center p-4 bg-accent rounded-lg hover:bg-gray-700 transition group">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white text-xl group-hover:scale-110 transition">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">Discord</h4>
+                            <p class="text-gray-400 text-sm">Jopeh#1234</p>
+                        </div>
+                    </a>
 
-      <div class="skills-container">
-        <div class="skill-card">
-          <i class="fab fa-html5"></i>
-          <h3>HTML5</h3>
-          <div class="progress-bar"><span style="width: 95%"></span></div>
-        </div>
+                    <a href="#" class="flex items-center p-4 bg-accent rounded-lg hover:bg-gray-700 transition group">
+                        <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white text-xl group-hover:scale-110 transition">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="text-white font-bold">Instagram</h4>
+                            <p class="text-gray-400 text-sm">@imjopeh</p>
+                        </div>
+                    </a>
+                </div>
 
-        <div class="skill-card">
-          <i class="fab fa-css3-alt"></i>
-          <h3>CSS3 / SCSS</h3>
-          <div class="progress-bar"><span style="width: 90%"></span></div>
+                <form id="contactForm" class="bg-accent p-8 rounded-xl border border-gray-800">
+                    <div class="mb-4">
+                        <label class="block text-gray-400 mb-2 text-sm">Your Username/Name</label>
+                        <input type="text" id="name" class="w-full bg-dark border border-gray-700 rounded-lg p-3 text-white focus:border-primary focus:outline-none" placeholder="Jopeh" required>
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-400 mb-2 text-sm">Email Address</label>
+                        <input type="email" id="email" class="w-full bg-dark border border-gray-700 rounded-lg p-3 text-white focus:border-primary focus:outline-none" placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-6">
+                        <label class="block text-gray-400 mb-2 text-sm">Message</label>
+                        <textarea id="message" rows="4" class="w-full bg-dark border border-gray-700 rounded-lg p-3 text-white focus:border-primary focus:outline-none" placeholder="Let's work together..." required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary text-white font-bold py-3 rounded-lg hover:bg-red-600 transition flex justify-center items-center gap-2">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
         </div>
-
-        <div class="skill-card">
-          <i class="fab fa-js"></i>
-          <h3>JavaScript</h3>
-          <div class="progress-bar"><span style="width: 85%"></span></div>
-        </div>
-
-        <div class="skill-card">
-          <i class="fab fa-react"></i>
-          <h3>React</h3>
-          <div class="progress-bar"><span style="width: 80%"></span></div>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-palette"></i>
-          <h3>UI / UX Design</h3>
-          <div class="progress-bar"><span style="width: 78%"></span></div>
-        </div>
-
-        <div class="skill-card">
-          <i class="fas fa-database"></i>
-          <h3>Backend & API</h3>
-          <div class="progress-bar"><span style="width: 70%"></span></div>
-        </div>
-      </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-      <h2>My Works</h2>
-      <div class="portfolio-grid">
-        <div class="item">
-          <img
-            src="https://images.unsplash.com/photo-1507842217343-583bb7270b66"
-            alt="Project 1"
-          />
-          <div class="overlay"><h3>Brand Landing Page</h3></div>
+    <footer class="bg-black py-10 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <img src="https://via.placeholder.com/30/EF4444/FFFFFF?text=JP" class="rounded-full">
+                    <span class="text-white font-heading font-bold text-lg">ImJopeh</span>
+                </div>
+                <p class="text-gray-500 text-sm">Building digital dreams with code and creativity.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Navigation</h4>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li><a href="index.html" class="hover:text-primary">Home</a></li>
+                    <li><a href="about.html" class="hover:text-primary">About</a></li>
+                    <li><a href="portfolio.html" class="hover:text-primary">Portfolio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Services</h4>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li>Web Development</li>
+                    <li>Minecraft Server Setup</li>
+                    <li>Discord Bot</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Legal</h4>
+                <ul class="space-y-2 text-sm text-gray-500">
+                    <li>Privacy Policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
         </div>
-        <div class="item">
-          <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-            alt="Project 2"
-          />
-          <div class="overlay"><h3>Portfolio Design</h3></div>
+        <div class="text-center border-t border-gray-900 pt-8">
+            <p class="text-gray-600 text-sm">Copyright © 2023 <span class="text-white">MappleID</span>. All Rights Reserved.</p>
         </div>
-        <div class="item">
-          <img
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
-            alt="Project 3"
-          />
-          <div class="overlay"><h3>Startup Website</h3></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2>Let’s Work Together</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-      <div class="socials">
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-github"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="footer-links">
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <p>© 2025 Aiden Carter | All Rights Reserved</p>
-
-      <button
-        class="to-top"
-        onclick="window.scrollTo({ top: 0, behavior: 'smooth' });"
-      >
-        <i class="fas fa-arrow-up"></i>
-      </button>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
