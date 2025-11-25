@@ -4,204 +4,241 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>JopehDeveloper | Portfolio & Professional Web Development</title>
-    <meta name="description" content="Portofolio Resmi JopehDeveloper. Spesialis Front-end, Backend, dan Bot Development. Lihat proyek unggulan Mapple Project dan keahlian coding lainnya.">
-    <meta name="keywords" content="JopehDeveloper, Portfolio, Front-end Developer, Minecraft Server Dev, Discord Bot Dev">
+    <title>JopehDeveloper | Senior Front-end & Bot Developer</title>
+    <meta name="description" content="Portofolio Resmi JopehDeveloper (ImJopeh). Ahli dalam Front-end Development, Minecraft Server, dan Discord Bot. Lihat proyek unggulan seperti Mapple Project disini.">
+    <meta name="keywords" content="JopehDeveloper, ImJopeh, Web Developer, Minecraft Dev, Front-end Portfolio">
     <meta name="author" content="JopehDeveloper">
     
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JopehDeveloper Portfolio">
+    <meta property="og:description" content="Welcome to my creative universe. Web, Bots, and Minecraft Development.">
+    <meta property="og:image" content="https://placehold.co/1200x630/1f2937/ef4444?text=JopehDev">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
+            darkMode: 'class',
             theme: {
                 extend: {
-                    colors: {
-                        primary: '#EF4444', // Merah Inti
-                        dark: '#0f172a',
-                        card: '#1e293b'
-                    },
                     fontFamily: {
                         sans: ['Open Sans', 'sans-serif'],
                         heading: ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#ef4444', // Red-500
+                            DEFAULT: '#dc2626', // Red-600
+                            dark: '#991b1b', // Red-800
+                        }
+                    },
+                    boxShadow: {
+                        'neon': '0 0 15px rgba(239, 68, 68, 0.5), 0 0 30px rgba(239, 68, 68, 0.3)',
+                        'neon-hover': '0 0 25px rgba(239, 68, 68, 0.8), 0 0 50px rgba(239, 68, 68, 0.5)',
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 1s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
                     }
                 }
             }
         }
     </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "JopehDeveloper",
-      "url": "https://jopehdev.my.id",
-      "sameAs": [
-        "https://instagram.com/username",
-        "https://github.com/username"
-      ],
-      "jobTitle": "Senior Front-end Developer",
-      "knowsAbout": ["Web Development", "Minecraft Server Dev", "Discord Bot Dev"]
-    }
-    </script>
+    <style>
+        /* Custom scrollbar for professional look */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #111827; }
+        ::-webkit-scrollbar-thumb { background: #ef4444; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #b91c1c; }
+        .glass-nav { background: rgba(17, 24, 39, 0.85); backdrop-filter: blur(10px); }
+    </style>
 </head>
-<body class="bg-dark text-gray-200 font-sans antialiased selection:bg-primary selection:text-white">
+<body class="bg-gray-900 text-gray-100 overflow-x-hidden flex flex-col min-h-screen">
 
-    <nav class="fixed w-full z-50 top-0 bg-dark/90 backdrop-blur-md border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
-                    <img class="h-10 w-10 rounded-full border-2 border-primary" src="https://via.placeholder.com/150" alt="Jopeh Logo">
-                    <span class="font-heading font-bold text-xl text-white tracking-wide">ImJopeh</span>
-                </div>
-                
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html" class="text-white hover:text-primary transition px-3 py-2 rounded-md text-sm font-medium">Home</a>
-                        <a href="#about-preview" class="text-gray-300 hover:text-primary transition px-3 py-2 rounded-md text-sm font-medium">About</a>
-                        <a href="#portfolio-preview" class="text-gray-300 hover:text-primary transition px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
-                        <a href="#contact" class="bg-primary hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition shadow-lg shadow-red-500/30">Contact Me</a>
-                    </div>
-                </div>
+    <nav class="fixed w-full z-50 glass-nav border-b border-gray-800 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="https://placehold.co/50x50/ef4444/white?text=JD" alt="Jopeh Logo" class="w-10 h-10 rounded-full border-2 border-brand shadow-neon transition-transform group-hover:rotate-12">
+                <span class="font-heading font-bold text-xl tracking-wide text-white group-hover:text-brand transition-colors">ImJopeh</span>
+            </a>
 
-                <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
+            <div class="hidden md:flex items-center gap-8 font-heading font-medium">
+                <a href="#hero" class="hover:text-brand transition-colors">Home</a>
+                <a href="#about-preview" class="hover:text-brand transition-colors">About</a>
+                <a href="#portfolio-preview" class="hover:text-brand transition-colors">Portfolio</a>
+                <a href="#contact" class="hover:text-brand transition-colors">Contact</a>
             </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-2xl text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-        
-        <div id="mobile-menu" class="hidden md:hidden bg-card border-b border-gray-800">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a href="index.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="#about-preview" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
-                <a href="#portfolio-preview" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
-                <a href="#contact" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-            </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800 border-t border-gray-700 p-4 flex flex-col gap-4 text-center">
+            <a href="#hero" class="block py-2 hover:text-brand">Home</a>
+            <a href="#about-preview" class="block py-2 hover:text-brand">About</a>
+            <a href="#portfolio-preview" class="block py-2 hover:text-brand">Portfolio</a>
+            <a href="#contact" class="block py-2 hover:text-brand">Contact</a>
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-        <div class="w-full md:w-1/2 flex justify-center md:justify-start order-1 md:order-1">
-           <div class="relative">
-               <div class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-full blur opacity-75"></div>
-               
-               <img src="https://via.placeholder.com/400" alt="JopehDeveloper Hero" class="relative rounded-full w-48 h-48 md:w-80 md:h-80 object-cover border-4 border-card shadow-2xl">
-           </div>
-        </div>
+    <section id="hero" class="min-h-screen flex items-center pt-20 md:pt-0 animate-fade-up">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-10">
+            
+            <div class="w-full md:w-1/2 flex justify-center md:justify-start order-1 md:order-1 relative">
+                <div class="absolute inset-0 bg-brand blur-[100px] opacity-20 rounded-full"></div>
+                <img src="https://placehold.co/400x400/1f2937/ef4444?text=JopehDev+Logo" alt="JopehDeveloper Profile" 
+                     class="relative z-10 w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4 border-brand shadow-neon animate-pulse">
+            </div>
 
-        <div class="w-full md:w-1/2 text-center md:text-left order-2 md:order-2">
-            <h3 class="text-primary font-bold text-lg tracking-widest mb-2 animate-pulse">WELCOME MESSAGE</h3>
-            <h1 class="font-heading text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
-                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-500">JopehDeveloper</span>
-            </h1>
-            <p class="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0">
-                Saya menciptakan pengalaman digital yang imersif. Senior Front-end Developer yang berfokus pada responsivitas, estetika, dan performa tinggi.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#contact" class="bg-primary text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-red-500/40 hover:bg-red-700 transition transform hover:-translate-y-1">
-                    Hire Me
-                </a>
-                <a href="portfolio.html" class="border border-gray-600 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition">
-                    Lihat Portfolio
-                </a>
+            <div class="w-full md:w-1/2 text-center md:text-right order-2 md:order-2">
+                <p class="text-brand font-bold text-lg mb-2 tracking-wider uppercase">Welcome to my world</p>
+                <h1 class="font-heading text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
+                    Hi, I'm <span class="text-brand drop-shadow-[0_0_10px_rgba(220,38,38,0.8)]">JopehDeveloper</span>
+                </h1>
+                <p class="text-gray-400 text-lg mb-8 max-w-lg ml-auto">
+                    Senior Front-end Developer specializing in creating immersive web experiences, Discord Bots, and Minecraft Server infrastructures.
+                </p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-end">
+                    <a href="#portfolio-preview" class="px-8 py-3 bg-brand text-white font-heading font-bold rounded-full shadow-neon hover:bg-red-700 hover:shadow-neon-hover transition-all transform hover:-translate-y-1">
+                        View Portfolio
+                    </a>
+                    <a href="#contact" class="px-8 py-3 border-2 border-brand text-brand font-heading font-bold rounded-full hover:bg-brand hover:text-white transition-all">
+                        Contact Me
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about-preview" class="py-20 bg-card/50">
-        <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="font-heading text-3xl font-bold text-white mb-6">About Me</h2>
-            <p class="text-gray-300 mb-8 leading-relaxed">
-                Saya adalah pengembang web yang berdedikasi dengan hasrat untuk membangun solusi yang elegan dan efisien. Dengan pengalaman bertahun-tahun dalam ekosistem web dan manajemen server, saya siap membantu mewujudkan visi digital Anda.
+    <section id="about-preview" class="py-20 bg-gray-800 relative">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">About <span class="text-brand">Me</span></h2>
+            <p class="text-gray-300 max-w-2xl mx-auto mb-8 text-lg leading-relaxed">
+                Saya adalah pengembang yang berdedikasi dengan passion tinggi dalam menciptakan kode yang efisien dan visual yang memukau. Berpengalaman dalam membangun ekosistem digital dari website responsif hingga manajemen server game.
             </p>
-            <a href="about.html" class="text-primary font-bold hover:text-white transition border-b-2 border-primary pb-1">
-                Baca Selengkapnya <i class="fas fa-arrow-right ml-2"></i>
+            <a href="about.html" class="inline-block px-8 py-3 bg-transparent border border-gray-500 hover:border-brand hover:text-brand text-white font-heading rounded transition-all duration-300">
+                Read More About Me <i class="fas fa-arrow-right ml-2"></i>
             </a>
         </div>
     </section>
 
-    <section id="portfolio-preview" class="py-20 max-w-7xl mx-auto px-4">
-        <div class="text-center mb-12">
-            <h2 class="font-heading text-3xl font-bold text-white mb-4">Featured Works</h2>
-            <p class="text-gray-400">Beberapa proyek pilihan yang telah saya kerjakan.</p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div class="bg-card rounded-xl overflow-hidden shadow-lg border border-gray-800 group">
-                <div class="relative">
-                    <span class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded shadow-md z-10">Projek Unggulan</span>
-                    
-                    <img src="https://via.placeholder.com/600x400" alt="Mapple Project" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
-                </div>
-                <div class="p-6">
-                    <h3 class="font-heading text-xl font-bold text-white mb-2">Mapple Project</h3>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-2">Platform manajemen server Minecraft terintegrasi dengan web dashboard.</p>
-                    <a href="portfolio.html" class="block w-full text-center bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg transition">Lihat Detail</a>
-                </div>
-            </div>
-             </div>
-        
-        <div class="text-center mt-10">
-             <a href="portfolio.html" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-full transition">
-                Lihat Semua Project
-            </a>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-card">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="portfolio-preview" class="py-20">
+        <div class="container mx-auto px-6">
             <div class="text-center mb-12">
-                <h2 class="font-heading text-3xl font-bold text-white">Contact Me</h2>
-                <p class="text-gray-400 mt-2">Hubungi saya melalui sosial media atau kirim pesan langsung.</p>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Featured <span class="text-brand">Portfolio</span></h2>
+                <p class="text-gray-400">Sorotan proyek terbaik yang pernah saya kerjakan.</p>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-indigo-500 transition group flex flex-col items-center text-center">
-                        <i class="fab fa-discord text-4xl text-indigo-500 mb-3 group-hover:scale-110 transition"></i>
-                        <h4 class="font-bold text-white">Discord</h4>
-                        <span class="text-gray-400 text-sm">jopeh#1234</span>
+            <div class="max-w-4xl mx-auto relative group">
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700 hover:border-brand transition-all duration-300 hover:shadow-neon transform hover:-translate-y-2">
+                    <div class="absolute top-4 left-4 bg-brand text-white text-xs font-bold px-3 py-1 rounded shadow-md z-10">
+                        <i class="fas fa-thumbtack mr-1"></i> Projek Unggulan
+                    </div>
+                    
+                    <div class="h-64 md:h-80 overflow-hidden relative">
+                        <img src="https://placehold.co/800x400/111827/ef4444?text=Mapple+Project+Banner" alt="Mapple Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-80"></div>
+                    </div>
+
+                    <div class="p-8 text-center">
+                        <h3 class="font-heading text-2xl font-bold text-white mb-3">Mapple Project</h3>
+                        <p class="text-gray-400 mb-6">
+                            Sebuah ekosistem Minecraft Server revolusioner dengan integrasi website penuh, sistem ekonomi custom, dan bot Discord manajemen otomatis.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-2 justify-center mb-6">
+                            <span class="px-3 py-1 bg-gray-700 text-xs rounded-full text-brand border border-gray-600">Minecraft</span>
+                            <span class="px-3 py-1 bg-gray-700 text-xs rounded-full text-brand border border-gray-600">Java</span>
+                            <span class="px-3 py-1 bg-gray-700 text-xs rounded-full text-brand border border-gray-600">Web Integration</span>
+                        </div>
+
+                        <div class="flex justify-center gap-4">
+                            <a href="#" class="px-6 py-2 bg-brand text-white rounded hover:bg-red-700 transition shadow-neon text-sm font-bold">
+                                <i class="fas fa-globe mr-2"></i> Visit Project
+                            </a>
+                            <a href="#" class="px-6 py-2 bg-gray-700 text-white rounded hover:bg-gray-600 transition text-sm font-bold">
+                                <i class="fab fa-github mr-2"></i> Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <a href="portfolio.html" class="inline-block text-brand font-bold hover:underline text-lg">
+                    View All Projects <i class="fas fa-angle-double-right ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-gray-800 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-brand rounded-full mix-blend-overlay filter blur-[100px] opacity-20"></div>
+        
+        <div class="container mx-auto px-6">
+            <h2 class="font-heading text-3xl md:text-4xl font-bold text-center mb-16">Get In <span class="text-brand">Touch</span></h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-6">
+                    <h3 class="font-heading text-2xl font-semibold mb-6">Social Media</h3>
+                    
+                    <a href="#" class="flex items-center p-4 bg-gray-900 rounded-lg border border-gray-700 hover:border-brand hover:shadow-neon transition-all group">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white text-xl mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-discord"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Discord</h4>
+                            <p class="text-sm text-gray-400">@ImJopeh</p>
+                        </div>
                     </a>
-                    <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-pink-500 transition group flex flex-col items-center text-center">
-                        <i class="fab fa-instagram text-4xl text-pink-500 mb-3 group-hover:scale-110 transition"></i>
-                        <h4 class="font-bold text-white">Instagram</h4>
-                        <span class="text-gray-400 text-sm">@jopehdev</span>
+
+                    <a href="#" class="flex items-center p-4 bg-gray-900 rounded-lg border border-gray-700 hover:border-brand hover:shadow-neon transition-all group">
+                        <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white text-xl mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Instagram</h4>
+                            <p class="text-sm text-gray-400">@Jopeh_Dev</p>
+                        </div>
                     </a>
-                     <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-red-500 transition group flex flex-col items-center text-center">
-                        <i class="fab fa-youtube text-4xl text-red-500 mb-3 group-hover:scale-110 transition"></i>
-                        <h4 class="font-bold text-white">Youtube</h4>
-                        <span class="text-gray-400 text-sm">Jopeh Tech</span>
-                    </a>
-                    <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-green-500 transition group flex flex-col items-center text-center">
-                        <i class="fab fa-whatsapp text-4xl text-green-500 mb-3 group-hover:scale-110 transition"></i>
-                        <h4 class="font-bold text-white">WhatsApp</h4>
-                        <span class="text-gray-400 text-sm">+62 812 xxxx</span>
+
+                    <a href="#" class="flex items-center p-4 bg-gray-900 rounded-lg border border-gray-700 hover:border-brand hover:shadow-neon transition-all group">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white text-xl mr-4 group-hover:scale-110 transition-transform">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white">Youtube</h4>
+                            <p class="text-sm text-gray-400">Jopeh Code</p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="bg-dark p-8 rounded-xl border border-gray-800 shadow-lg">
+                <div class="bg-gray-900 p-8 rounded-xl border border-gray-700 relative">
                     <form id="contactForm" class="space-y-4">
                         <div>
-                            <label class="block text-gray-400 text-sm font-bold mb-2">Username / Nama</label>
-                            <input type="text" id="name" class="w-full bg-card text-white border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-primary" placeholder="Nama kamu" required>
+                            <label class="block text-sm font-bold mb-2 text-gray-400">Username / Name</label>
+                            <input type="text" id="name" class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:border-brand focus:outline-none focus:shadow-neon transition-all" placeholder="Your Name" required>
                         </div>
                         <div>
-                            <label class="block text-gray-400 text-sm font-bold mb-2">Email</label>
-                            <input type="email" id="email" class="w-full bg-card text-white border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-primary" placeholder="email@example.com" required>
+                            <label class="block text-sm font-bold mb-2 text-gray-400">Email</label>
+                            <input type="email" id="email" class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:border-brand focus:outline-none focus:shadow-neon transition-all" placeholder="name@example.com" required>
                         </div>
                         <div>
-                            <label class="block text-gray-400 text-sm font-bold mb-2">Message</label>
-                            <textarea id="message" rows="4" class="w-full bg-card text-white border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-primary" placeholder="Tulis pesanmu disini..." required></textarea>
+                            <label class="block text-sm font-bold mb-2 text-gray-400">Message</label>
+                            <textarea id="message" rows="4" class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:border-brand focus:outline-none focus:shadow-neon transition-all" placeholder="Write your message here..." required></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-3 rounded-lg transition shadow-lg shadow-red-500/20">
-                            <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+                        <button type="submit" class="w-full bg-brand text-white font-bold py-3 rounded hover:bg-red-700 transition-all shadow-neon mt-2">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
                         </button>
                     </form>
                 </div>
@@ -209,41 +246,15 @@
         </div>
     </section>
 
-    <footer class="bg-black border-t border-gray-800 pt-16 pb-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="col-span-1 md:col-span-2">
-                    <div class="flex items-center gap-2 mb-4">
-                        <img src="https://via.placeholder.com/50" class="h-8 w-8 rounded-full" alt="Logo">
-                        <span class="text-2xl font-heading font-bold text-white">MappleID</span>
-                    </div>
-                    <p class="text-gray-400 text-sm max-w-xs">
-                        Membangun masa depan digital dengan kode yang rapi, efisien, dan desain yang menawan.
-                    </p>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="index.html" class="hover:text-primary">Home</a></li>
-                        <li><a href="about.html" class="hover:text-primary">About Me</a></li>
-                        <li><a href="portfolio.html" class="hover:text-primary">Portfolio</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-bold mb-4">Legal</h4>
-                    <ul class="space-y-2 text-gray-400 text-sm">
-                        <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
-                        <li><a href="#" class="hover:text-primary">Terms of Service</a></li>
-                    </ul>
-                </div>
+    <footer class="bg-black py-10 mt-auto border-t border-gray-800">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center gap-3 mb-4 md:mb-0">
+                <img src="https://placehold.co/40x40/ef4444/white?text=ID" class="w-8 h-8 rounded">
+                <span class="font-heading font-bold text-xl text-white">MappleID</span>
             </div>
-            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-                <p class="text-gray-500 text-sm">© 2023 MappleID. All rights reserved.</p>
-                <div class="flex space-x-4 mt-4 md:mt-0">
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-discord"></i></a>
-                </div>
+            <div class="text-gray-500 text-sm text-center md:text-right">
+                <p>&copy; 2023 - 2025 MappleID & JopehDeveloper. All Rights Reserved.</p>
+                <p class="mt-1">Designed professionally by ImJopeh.</p>
             </div>
         </div>
     </footer>
