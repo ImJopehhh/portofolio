@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | JopehDeveloper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { primary: '#EF4444', dark: '#111827', accent: '#1F2937' }, fontFamily: { sans: ['Open Sans'], heading: ['Poppins'] } } }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-300 font-sans">
+    
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-white hover:text-primary transition font-bold"><i class="fas fa-arrow-left mr-2"></i> Back to Home</a>
+            <span class="text-primary font-heading font-bold">About Me</span>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 mb-16">
+                <div class="lg:col-span-1">
+                    <img src="https://via.placeholder.com/500x600/1F2937/EF4444?text=Photo+Profile" class="rounded-xl shadow-lg border-2 border-gray-700 w-full h-auto">
+                </div>
+                <div class="lg:col-span-2">
+                    <h1 class="text-4xl font-heading font-bold text-white mb-6">I'm JopehDeveloper</h1>
+                    <p class="text-gray-400 leading-relaxed mb-8">
+                        Saya adalah pengembang yang berdedikasi dengan pengalaman bertahun-tahun dalam menciptakan solusi web dan server game. Fokus saya adalah pada kualitas kode, keamanan, dan pengalaman pengguna yang luar biasa. (Isi paragraf sama dengan index).
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-accent p-4 rounded-lg">
+                            <span class="text-primary text-sm font-bold block">Full Name</span>
+                            <span class="text-white">Jopeh Alexander</span>
+                        </div>
+                        <div class="bg-accent p-4 rounded-lg">
+                            <span class="text-primary text-sm font-bold block">Age</span>
+                            <span class="text-white">20 Years Old</span>
+                        </div>
+                        <div class="bg-accent p-4 rounded-lg">
+                            <span class="text-primary text-sm font-bold block">Languages</span>
+                            <span class="text-white">Indonesian, English, Javanese</span>
+                        </div>
+                        <div class="bg-accent p-4 rounded-lg">
+                            <span class="text-primary text-sm font-bold block">Origin</span>
+                            <span class="text-white">Jakarta, Indonesia</span>
+                        </div>
+                        <div class="bg-accent p-4 rounded-lg">
+                            <span class="text-primary text-sm font-bold block">Alias</span>
+                            <span class="text-white">ImJopeh / MappleAdmin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-16">
+                <h3 class="text-2xl font-heading font-bold text-white mb-8 border-l-4 border-primary pl-4">My Programming Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-white font-bold">HTML & CSS</span>
+                            <span class="text-primary">95%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-white font-bold">JavaScript (ES6+)</span>
+                            <span class="text-primary">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-white font-bold">Java (Minecraft)</span>
+                            <span class="text-primary">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="text-white font-bold">Node.js</span>
+                            <span class="text-primary">70%</span>
+                        </div>
+                        <div class="w-full bg-gray-700 rounded-full h-2.5">
+                            <div class="bg-primary h-2.5 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-2xl font-heading font-bold text-white mb-8 border-l-4 border-primary pl-4">Other Skills</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-accent p-6 rounded-xl border border-gray-800 hover:border-primary transition group">
+                        <i class="fas fa-code text-3xl text-primary mb-4 group-hover:scale-110 transition"></i>
+                        <h4 class="text-white font-bold text-lg mb-2">Front End Dev</h4>
+                        <p class="text-sm text-gray-400">Membangun tampilan website yang responsif dan interaktif dengan teknologi modern.</p>
+                    </div>
+                    <div class="bg-accent p-6 rounded-xl border border-gray-800 hover:border-primary transition group">
+                        <i class="fas fa-server text-3xl text-primary mb-4 group-hover:scale-110 transition"></i>
+                        <h4 class="text-white font-bold text-lg mb-2">Back End Dev</h4>
+                        <p class="text-sm text-gray-400">Mengelola database dan logika server agar website berjalan lancar.</p>
+                    </div>
+                    <div class="bg-accent p-6 rounded-xl border border-gray-800 hover:border-primary transition group">
+                        <i class="fas fa-cubes text-3xl text-primary mb-4 group-hover:scale-110 transition"></i>
+                        <h4 class="text-white font-bold text-lg mb-2">Minecraft Dev</h4>
+                        <p class="text-sm text-gray-400">Konfigurasi plugin, manajemen server, dan custom item creation.</p>
+                    </div>
+                    <div class="bg-accent p-6 rounded-xl border border-gray-800 hover:border-primary transition group">
+                        <i class="fas fa-robot text-3xl text-primary mb-4 group-hover:scale-110 transition"></i>
+                        <h4 class="text-white font-bold text-lg mb-2">Bot Dev</h4>
+                        <p class="text-sm text-gray-400">Pembuatan bot Discord canggih untuk moderasi dan utilitas komunitas.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-black py-6 text-center border-t border-gray-900">
+        <p class="text-gray-600 text-sm">Copyright © 2023 <span class="text-white">MappleID</span>.</p>
+    </footer>
+</body>
+</html>
