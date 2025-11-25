@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | JopehDeveloper</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { colors: { primary: '#EF4444', dark: '#111827', accent: '#1F2937' }, fontFamily: { sans: ['Open Sans'], heading: ['Poppins'] } } }
+        }
+    </script>
+</head>
+<body class="bg-dark text-gray-300 font-sans">
+    
+    <nav class="fixed w-full z-50 bg-dark/90 backdrop-blur-md border-b border-gray-800 py-4">
+        <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+            <a href="index.html" class="text-white hover:text-primary transition font-bold"><i class="fas fa-arrow-left mr-2"></i> Back to Home</a>
+            <span class="text-primary font-heading font-bold">Portfolio Gallery</span>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-heading font-bold text-white">My <span class="text-primary">Creation</span></h1>
+                <p class="text-gray-500 mt-2">Jelajahi proyek-proyek yang telah saya bangun dengan penuh dedikasi.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="bg-accent rounded-xl overflow-hidden shadow-xl border-2 border-primary transform hover:-translate-y-2 transition duration-300 relative">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/600x400/111111/EF4444?text=Mapple+Project" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-primary text-white text-xs font-bold px-3 py-2 rounded-br-lg z-10">
+                            <i class="fas fa-thumbtack mr-1"></i> PROJEK UNGGULAN
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Mapple Project ID</h3>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            Ekosistem komunitas Minecraft terbesar. Website terintegrasi untuk store, ban-list, dan statistik player secara realtime.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-2 py-1 bg-gray-800 text-xs rounded text-gray-300">Minecraft</span>
+                            <span class="px-2 py-1 bg-gray-800 text-xs rounded text-gray-300">Fullstack</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="flex-1 text-center bg-primary text-white py-2 rounded font-bold text-sm hover:bg-red-600 transition">Visit Site</a>
+                            <a href="#" class="flex-1 text-center border border-gray-600 text-gray-300 py-2 rounded font-bold text-sm hover:border-white hover:text-white transition">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-accent rounded-xl overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition duration-300 relative">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/600x400/222222/FFFFFF?text=Discord+Bot" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-green-600 text-white text-xs font-bold px-3 py-2 rounded-br-lg z-10">
+                            COMPLETED
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Guardian Bot</h3>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            Bot moderasi Discord canggih dengan fitur auto-moderation, music player, dan leveling system custom.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-2 py-1 bg-gray-800 text-xs rounded text-gray-300">Node.js</span>
+                            <span class="px-2 py-1 bg-gray-800 text-xs rounded text-gray-300">Discord.js</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="flex-1 text-center bg-gray-700 text-white py-2 rounded font-bold text-sm hover:bg-gray-600 transition">Invite</a>
+                            <a href="#" class="flex-1 text-center border border-gray-600 text-gray-300 py-2 rounded font-bold text-sm hover:border-white hover:text-white transition">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-accent rounded-xl overflow-hidden shadow-lg border border-gray-800 transform hover:-translate-y-2 transition duration-300 relative">
+                    <div class="relative">
+                        <img src="https://via.placeholder.com/600x400/333333/FFFFFF?text=Web+Dashboard" class="w-full h-48 object-cover">
+                        <div class="absolute top-0 left-0 bg-yellow-600 text-white text-xs font-bold px-3 py-2 rounded-br-lg z-10">
+                            ON GOING
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-white mb-2">Admin Dashboard</h3>
+                        <p class="text-gray-400 text-sm mb-4 line-clamp-3">
+                            Dashboard manajemen stok barang dengan grafik analitik penjualan dan manajemen user role.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-2 py-1 bg-gray-800 text-xs rounded text-gray-300">React</span>
+                            <span class="px-2 py-1 bg-gray-800 text-xs rounded text-gray-300">Tailwind</span>
+                        </div>
+                        <div class="flex gap-3">
+                            <a href="#" class="flex-1 text-center bg-gray-700 text-white py-2 rounded font-bold text-sm hover:bg-gray-600 transition">Demo</a>
+                            <a href="#" class="flex-1 text-center border border-gray-600 text-gray-300 py-2 rounded font-bold text-sm hover:border-white hover:text-white transition">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-6 text-center border-t border-gray-900">
+        <p class="text-gray-600 text-sm">Copyright © 2023 <span class="text-white">MappleID</span>.</p>
+    </footer>
+</body>
+</html>
