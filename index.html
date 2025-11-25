@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>JopehDeveloper | Senior Web & Minecraft Developer</title>
-    <meta name="description" content="Portofolio Resmi JopehDeveloper. Ahli dalam Front-end, Back-end, Minecraft Server Development, dan Bot Discord.">
-    <meta name="robots" content="index, follow">
+    <title>JopehDeveloper | Portfolio & Professional Web Development</title>
+    <meta name="description" content="Portofolio Resmi JopehDeveloper. Spesialis Front-end, Backend, dan Bot Development. Lihat proyek unggulan Mapple Project dan keahlian coding lainnya.">
+    <meta name="keywords" content="JopehDeveloper, Portfolio, Front-end Developer, Minecraft Server Dev, Discord Bot Dev">
+    <meta name="author" content="JopehDeveloper">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700;800&display=swap" rel="stylesheet">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -20,250 +22,232 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#EF4444', // Warna Merah Inti
-                        dark: '#0B0F19',    // Latar belakang sangat gelap (sedikit biru tua)
-                        darker: '#05070A',  // Untuk section yang lebih dalam
-                        accent: '#161E2E',  // Untuk warna dasar box
+                        primary: '#EF4444', // Merah Inti
+                        dark: '#0f172a',
+                        card: '#1e293b'
                     },
                     fontFamily: {
                         sans: ['Open Sans', 'sans-serif'],
                         heading: ['Poppins', 'sans-serif'],
-                    },
-                    // MENAMBAHKAN EFEK CAHAYA (NEON GLOW)
-                    boxShadow: {
-                        'glow-sm': '0 0 15px -3px rgba(239, 68, 68, 0.3)', // Cahaya merah halus
-                        'glow-md': '0 0 25px -5px rgba(239, 68, 68, 0.5)', // Cahaya merah sedang
-                        'glow-lg': '0 0 40px -10px rgba(239, 68, 68, 0.7)', // Cahaya merah intens
-                        'glow-blue': '0 0 25px -5px rgba(59, 130, 246, 0.6)', // Cahaya khusus Discord
-                        'glow-pink': '0 0 25px -5px rgba(236, 72, 153, 0.6)', // Cahaya khusus Instagram
-                    },
-                    backgroundImage: {
-                        // Latar belakang gradien halus agar tidak flat
-                        'main-gradient': 'radial-gradient(circle at top right, rgba(239, 68, 68, 0.1) 0%, transparent 40%), radial-gradient(circle at bottom left, rgba(30, 58, 138, 0.1) 0%, transparent 40%)',
                     }
                 }
             }
         }
     </script>
 
-    <style>
-        /* Custom Scrollbar Premium */
-        ::-webkit-scrollbar { width: 10px; }
-        ::-webkit-scrollbar-track { background: #05070A; }
-        ::-webkit-scrollbar-thumb { background: linear-gradient(to bottom, #EF4444, #991B1B); border-radius: 5px; border: 2px solid #05070A; }
-        
-        /* Loader dengan efek pendar */
-        .loader-bg {
-            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-            background: #05070A; z-index: 9999; display: flex;
-            justify-content: center; align-items: center; flex-direction: column;
-            transition: opacity 0.5s ease, visibility 0.5s;
-            /* Tambahan background halus saat loading */
-            background-image: radial-gradient(circle at center, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
-        }
-        .loader-hidden { opacity: 0; visibility: hidden; }
-        
-        /* Utility kelas untuk Glassmorphism effect pada box */
-        .glass-box {
-            background: rgba(22, 30, 46, 0.6); /* Warna accent dengan transparansi */
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-    </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "JopehDeveloper",
+      "url": "https://jopehdev.my.id",
+      "sameAs": [
+        "https://instagram.com/username",
+        "https://github.com/username"
+      ],
+      "jobTitle": "Senior Front-end Developer",
+      "knowsAbout": ["Web Development", "Minecraft Server Dev", "Discord Bot Dev"]
+    }
+    </script>
 </head>
-<body class="bg-dark bg-main-gradient text-gray-300 font-sans antialiased overflow-x-hidden min-h-screen">
+<body class="bg-dark text-gray-200 font-sans antialiased selection:bg-primary selection:text-white">
 
-    <div id="loader" class="loader-bg">
-        <div class="w-24 h-24 rounded-full bg-dark border-4 border-primary shadow-glow-lg flex items-center justify-center animate-pulse relative">
-            <span class="text-4xl font-heading font-bold text-primary">JD</span>
-            <div class="absolute inset-0 rounded-full border-2 border-primary opacity-50 animate-ping"></div>
-        </div>
-        <h2 class="mt-8 text-2xl font-heading font-bold text-white tracking-[0.3em] drop-shadow-[0_0_10px_rgba(239,68,68,0.8)]">LOADING_SYSTEM</h2>
-    </div>
-
-    <nav class="fixed w-full z-50 bg-dark/70 backdrop-blur-xl border-b border-primary/20 shadow-glow-sm">
+    <nav class="fixed w-full z-50 top-0 bg-dark/90 backdrop-blur-md border-b border-gray-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <div class="flex items-center gap-3 group cursor-pointer">
-                    <div class="relative">
-                        <img src="https://via.placeholder.com/50/EF4444/FFFFFF?text=JP" alt="Logo" class="h-10 w-10 rounded-full border-2 border-primary shadow-glow-sm group-hover:shadow-glow-md transition relative z-10">
-                        <div class="absolute inset-0 bg-primary rounded-full blur-md opacity-40 group-hover:opacity-70 transition"></div>
-                    </div>
-                    <span class="text-white font-heading font-bold text-xl tracking-wide group-hover:text-primary transition drop-shadow-sm">ImJopeh</span>
+                <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer" onclick="window.location.href='index.html'">
+                    <img class="h-10 w-10 rounded-full border-2 border-primary" src="https://via.placeholder.com/150" alt="Jopeh Logo">
+                    <span class="font-heading font-bold text-xl text-white tracking-wide">ImJopeh</span>
                 </div>
                 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html" class="text-primary font-bold px-3 py-2 rounded-md text-sm font-heading drop-shadow-[0_0_5px_rgba(239,68,68,0.5)]">Home</a>
-                        <a href="#about-preview" class="nav-link text-gray-300 hover:text-primary transition px-3 py-2 rounded-md text-sm font-heading hover:drop-shadow-[0_0_5px_rgba(239,68,68,0.5)]">About</a>
-                        <a href="#portfolio-preview" class="nav-link text-gray-300 hover:text-primary transition px-3 py-2 rounded-md text-sm font-heading hover:drop-shadow-[0_0_5px_rgba(239,68,68,0.5)]">Portfolio</a>
-                        <a href="#contact" class="bg-primary/90 text-white px-6 py-2 rounded-full font-bold hover:bg-red-600 transition text-sm font-heading shadow-glow-md hover:shadow-glow-lg transform hover:-translate-y-0.5">Contact</a>
+                        <a href="index.html" class="text-white hover:text-primary transition px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#about-preview" class="text-gray-300 hover:text-primary transition px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#portfolio-preview" class="text-gray-300 hover:text-primary transition px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                        <a href="#contact" class="bg-primary hover:bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium transition shadow-lg shadow-red-500/30">Contact Me</a>
                     </div>
                 </div>
 
                 <div class="-mr-2 flex md:hidden">
-                    <button onclick="toggleMenu()" class="text-gray-400 hover:text-primary p-2 transition">
-                        <i class="fas fa-bars text-2xl drop-shadow-sm"></i>
+                    <button id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden glass-box border-t border-primary/20 p-4 backdrop-blur-xl">
-            <a href="index.html" class="block px-3 py-2 text-primary font-bold drop-shadow-sm">Home</a>
-            <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-primary transition">About Me</a>
-            <a href="portfolio.html" class="block px-3 py-2 text-gray-300 hover:text-primary transition">Portfolio</a>
-            <a href="#contact" class="block px-3 py-2 text-white font-bold bg-primary/20 rounded mt-2 shadow-glow-sm">Contact</a>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-card border-b border-gray-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#about-preview" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#portfolio-preview" class="text-gray-300 block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+                <a href="#contact" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <section class="relative pt-36 pb-20 lg:pt-52 lg:pb-32 overflow-hidden">
-        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[100px] -z-10 animate-pulse duration-[5000ms]"></div>
+    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        <div class="w-full md:w-1/2 flex justify-center md:justify-start order-1 md:order-1">
+           <div class="relative">
+               <div class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-full blur opacity-75"></div>
+               
+               <img src="https://via.placeholder.com/400" alt="JopehDeveloper Hero" class="relative rounded-full w-48 h-48 md:w-80 md:h-80 object-cover border-4 border-card shadow-2xl">
+           </div>
+        </div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col-reverse md:flex-row items-center">
-            
-            <div class="w-full md:w-1/2 text-center md:text-left mt-12 md:mt-0 z-10">
-                <p class="text-primary font-heading font-semibold tracking-wider mb-3 drop-shadow-[0_0_8px_rgba(239,68,68,0.4)]">
-                    <i class="fas fa-code mr-2"></i>WELCOME TO MY UNIVERSE
-                </p>
-                <h1 class="text-4xl md:text-6xl font-heading font-extrabold text-white mb-6 leading-tight">
-                    Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-400 drop-shadow-[0_0_15px_rgba(239,68,68,0.4)]">JopehDeveloper</span>
-                </h1>
-                <p class="text-gray-300 text-lg mb-10 max-w-lg mx-auto md:mx-0 leading-relaxed border-l-2 border-primary/50 pl-4">
-                    Senior Front-end Developer & Minecraft Specialist. Saya membangun pengalaman digital yang interaktif, responsif, dan berkinerja tinggi dengan sentuhan modern.
-                </p>
-                <div class="flex gap-5 justify-center md:justify-start">
-                    <a href="#contact" class="px-8 py-4 bg-gradient-to-r from-primary to-red-600 text-white font-heading font-bold rounded-lg shadow-glow-md hover:shadow-glow-lg transition-all transform hover:-translate-y-1 flex items-center gap-2">
-                        Hire Me Now <i class="fas fa-bolt"></i>
-                    </a>
-                    <a href="portfolio.html" class="px-8 py-4 glass-box border border-primary/30 text-white font-heading font-bold rounded-lg transition-all hover:border-primary hover:shadow-glow-sm hover:text-primary flex items-center gap-2 group">
-                        View Projects <i class="fas fa-arrow-right group-hover:translate-x-1 transition"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="w-full md:w-1/2 flex justify-center z-10 relative">
-                <div class="absolute w-[400px] h-[400px] bg-gradient-to-br from-primary/30 to-purple-600/20 rounded-full blur-3xl -top-20 -right-20 -z-10 animate-spin-slow"></div>
-                
-                <div class="relative group">
-                    <div class="absolute inset-0 bg-gradient-to-r from-primary via-red-500 to-purple-600 rounded-full blur-xl opacity-50 group-hover:opacity-80 transition duration-500 animate-pulse"></div>
-                    <img src="https://via.placeholder.com/400x400/1F2937/EF4444?text=Jopeh+Logo" alt="Jopeh Developer" class="relative w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-[6px] border-dark shadow-glow-md z-10 group-hover:scale-105 transition duration-500">
-                </div>
+        <div class="w-full md:w-1/2 text-center md:text-left order-2 md:order-2">
+            <h3 class="text-primary font-bold text-lg tracking-widest mb-2 animate-pulse">WELCOME MESSAGE</h3>
+            <h1 class="font-heading text-4xl md:text-6xl font-extrabold text-white mb-4 leading-tight">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-orange-500">JopehDeveloper</span>
+            </h1>
+            <p class="text-gray-400 text-lg mb-8 max-w-lg mx-auto md:mx-0">
+                Saya menciptakan pengalaman digital yang imersif. Senior Front-end Developer yang berfokus pada responsivitas, estetika, dan performa tinggi.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <a href="#contact" class="bg-primary text-white font-bold py-3 px-8 rounded-full shadow-lg shadow-red-500/40 hover:bg-red-700 transition transform hover:-translate-y-1">
+                    Hire Me
+                </a>
+                <a href="portfolio.html" class="border border-gray-600 text-white font-bold py-3 px-8 rounded-full hover:bg-gray-800 transition">
+                    Lihat Portfolio
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="about-preview" class="py-24 relative">
-        <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent"></div>
-        
-        <div class="max-w-5xl mx-auto px-4 text-center glass-box p-10 rounded-3xl shadow-glow-sm border-t border-primary/20 relative overflow-hidden">
-             <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10 pointer-events-none"></div>
-
-            <h2 class="text-3xl font-heading font-bold text-white mb-6 drop-shadow-sm">About <span class="text-primary drop-shadow-[0_0_10px_rgba(239,68,68,0.6)]">Me</span></h2>
-            <p class="text-gray-300 mb-10 leading-relaxed max-w-3xl mx-auto text-lg">
-                Saya adalah pengembang yang berdedikasi dengan pengalaman bertahun-tahun dalam menciptakan solusi web dan server game. Fokus saya adalah pada kualitas kode, keamanan, dan pengalaman pengguna yang luar biasa.
+    <section id="about-preview" class="py-20 bg-card/50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="font-heading text-3xl font-bold text-white mb-6">About Me</h2>
+            <p class="text-gray-300 mb-8 leading-relaxed">
+                Saya adalah pengembang web yang berdedikasi dengan hasrat untuk membangun solusi yang elegan dan efisien. Dengan pengalaman bertahun-tahun dalam ekosistem web dan manajemen server, saya siap membantu mewujudkan visi digital Anda.
             </p>
-            <a href="about.html" class="inline-flex items-center px-8 py-3 bg-accent/50 hover:bg-primary/20 border-b-2 border-primary text-white font-heading hover:text-primary transition rounded-lg hover:shadow-glow-sm group">
-                Read Full Bio <i class="fas fa-arrow-right ml-3 group-hover:translate-x-2 transition"></i>
+            <a href="about.html" class="text-primary font-bold hover:text-white transition border-b-2 border-primary pb-1">
+                Baca Selengkapnya <i class="fas fa-arrow-right ml-2"></i>
             </a>
         </div>
     </section>
 
-    <section id="portfolio-preview" class="py-24 relative">
-        <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-900/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+    <section id="portfolio-preview" class="py-20 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="font-heading text-3xl font-bold text-white mb-4">Featured Works</h2>
+            <p class="text-gray-400">Beberapa proyek pilihan yang telah saya kerjakan.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-card rounded-xl overflow-hidden shadow-lg border border-gray-800 group">
+                <div class="relative">
+                    <span class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded shadow-md z-10">Projek Unggulan</span>
+                    
+                    <img src="https://via.placeholder.com/600x400" alt="Mapple Project" class="w-full h-48 object-cover group-hover:scale-105 transition duration-300">
+                </div>
+                <div class="p-6">
+                    <h3 class="font-heading text-xl font-bold text-white mb-2">Mapple Project</h3>
+                    <p class="text-gray-400 text-sm mb-4 line-clamp-2">Platform manajemen server Minecraft terintegrasi dengan web dashboard.</p>
+                    <a href="portfolio.html" class="block w-full text-center bg-gray-700 hover:bg-gray-600 text-white py-2 rounded-lg transition">Lihat Detail</a>
+                </div>
+            </div>
+             </div>
+        
+        <div class="text-center mt-10">
+             <a href="portfolio.html" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white font-bold py-3 px-8 rounded-full transition">
+                Lihat Semua Project
+            </a>
+        </div>
+    </section>
 
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-heading font-bold text-white tracking-tight"><i class="fas fa-star text-primary mr-2 animate-pulse"></i>Featured <span class="text-primary drop-shadow-[0_0_12px_rgba(239,68,68,0.7)]">Work</span></h2>
-                <p class="text-gray-400 mt-4 text-lg max-w-2xl mx-auto">Intip salah satu mahakarya terbaik yang pernah saya kerjakan.</p>
+    <section id="contact" class="py-20 bg-card">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl font-bold text-white">Contact Me</h2>
+                <p class="text-gray-400 mt-2">Hubungi saya melalui sosial media atau kirim pesan langsung.</p>
             </div>
 
-            <div class="glass-box rounded-2xl overflow-hidden shadow-glow-md hover:shadow-glow-lg transition-all duration-500 border border-primary/30 hover:border-primary max-w-4xl mx-auto group relative">
-                <div class="absolute top-0 -left-[100%] w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 transition-all duration-1000 group-hover:left-[100%] z-20"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-indigo-500 transition group flex flex-col items-center text-center">
+                        <i class="fab fa-discord text-4xl text-indigo-500 mb-3 group-hover:scale-110 transition"></i>
+                        <h4 class="font-bold text-white">Discord</h4>
+                        <span class="text-gray-400 text-sm">jopeh#1234</span>
+                    </a>
+                    <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-pink-500 transition group flex flex-col items-center text-center">
+                        <i class="fab fa-instagram text-4xl text-pink-500 mb-3 group-hover:scale-110 transition"></i>
+                        <h4 class="font-bold text-white">Instagram</h4>
+                        <span class="text-gray-400 text-sm">@jopehdev</span>
+                    </a>
+                     <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-red-500 transition group flex flex-col items-center text-center">
+                        <i class="fab fa-youtube text-4xl text-red-500 mb-3 group-hover:scale-110 transition"></i>
+                        <h4 class="font-bold text-white">Youtube</h4>
+                        <span class="text-gray-400 text-sm">Jopeh Tech</span>
+                    </a>
+                    <a href="#" class="bg-dark p-6 rounded-xl border border-gray-800 hover:border-green-500 transition group flex flex-col items-center text-center">
+                        <i class="fab fa-whatsapp text-4xl text-green-500 mb-3 group-hover:scale-110 transition"></i>
+                        <h4 class="font-bold text-white">WhatsApp</h4>
+                        <span class="text-gray-400 text-sm">+62 812 xxxx</span>
+                    </a>
+                </div>
 
-                <div class="grid md:grid-cols-2">
-                     <div class="relative h-64 md:h-auto overflow-hidden">
-                        <img src="https://via.placeholder.com/800x600/111111/EF4444?text=Mapple+Project+Banner" class="w-full h-full object-cover transform group-hover:scale-110 transition duration-700" alt="Mapple Project">
-                        <div class="absolute inset-0 bg-gradient-to-t from-dark/80 to-transparent"></div>
-                        <div class="absolute top-4 left-4 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-glow-md flex items-center gap-2 z-30 border border-red-400">
-                             <i class="fas fa-trophy"></i> PROJEK UNGGULAN
-                        </div>
-                    </div>
-                    <div class="p-8 md:p-12 flex flex-col justify-center relative">
-                         <i class="fas fa-cubes absolute bottom-4 right-4 text-8xl text-white/5 -z-10 group-hover:text-primary/10 transition"></i>
-
-                        <h3 class="text-3xl font-heading font-bold text-white mb-4 group-hover:text-primary transition drop-shadow-sm">Mapple Project</h3>
-                        <p class="text-gray-300 mb-8 leading-relaxed">Platform komunitas Minecraft terbesar dengan integrasi web, store system, dan bot discord yang seamless. Sebuah ekosistem gaming yang lengkap.</p>
+                <div class="bg-dark p-8 rounded-xl border border-gray-800 shadow-lg">
+                    <form id="contactForm" class="space-y-4">
                         <div>
-                            <a href="portfolio.html" class="px-8 py-3 bg-primary hover:bg-red-600 text-white rounded-lg font-bold transition shadow-glow-sm hover:shadow-glow-md inline-flex items-center gap-2">
-                                Lihat Semua Proyek <i class="fas fa-external-link-alt"></i>
-                            </a>
+                            <label class="block text-gray-400 text-sm font-bold mb-2">Username / Nama</label>
+                            <input type="text" id="name" class="w-full bg-card text-white border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-primary" placeholder="Nama kamu" required>
                         </div>
-                    </div>
+                        <div>
+                            <label class="block text-gray-400 text-sm font-bold mb-2">Email</label>
+                            <input type="email" id="email" class="w-full bg-card text-white border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-primary" placeholder="email@example.com" required>
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-sm font-bold mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full bg-card text-white border border-gray-700 rounded-lg py-3 px-4 focus:outline-none focus:border-primary" placeholder="Tulis pesanmu disini..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-red-600 text-white font-bold py-3 rounded-lg transition shadow-lg shadow-red-500/20">
+                            <i class="fas fa-paper-plane mr-2"></i> Kirim Pesan
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-24 bg-darker relative">
-         <div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-
-        <div class="max-w-7xl mx-auto px-4 relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-heading font-bold text-white mb-4">Get In <span class="text-primary drop-shadow-[0_0_10px_rgba(239,68,68,0.7)]">Touch</span></h2>
-                <p class="text-gray-400 text-lg">Mari berkolaborasi dan wujudkan ide brilian Anda.</p>
-            </div>
-            
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                <div class="space-y-6">
-                    <h3 class="text-2xl text-white font-heading font-semibold mb-8 flex items-center gap-3">
-                        <i class="far fa-comments text-primary"></i> Connect Channels
-                    </h3>
-                    
-                    <a href="#" class="glass-box flex items-center p-5 rounded-xl border border-blue-500/20 hover:border-blue-500/80 transition-all group hover:shadow-glow-blue hover:-translate-y-1 relative overflow-hidden">
-                         <div class="absolute inset-0 bg-blue-600/0 group-hover:bg-blue-600/10 transition duration-500"></div>
-                        <div class="w-14 h-14 bg-indigo-600/80 rounded-xl flex items-center justify-center text-white text-2xl group-hover:scale-110 transition shadow-lg group-hover:shadow-blue-500/50 relative z-10 border border-white/20">
-                            <i class="fab fa-discord"></i>
-                        </div>
-                        <div class="ml-5 relative z-10">
-                            <h4 class="text-white font-bold text-lg group-hover:text-blue-400 transition">Discord</h4>
-                            <p class="text-gray-400">Jopeh#1234</p>
-                        </div>
-                    </a>
-
-                    <a href="#" class="glass-box flex items-center p-5 rounded-xl border border-pink-500/20 hover:border-pink-500/80 transition-all group hover:shadow-glow-pink hover:-translate-y-1 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-pink-600/0 group-hover:bg-pink-600/10 transition duration-500"></div>
-                        <div class="w-14 h-14 bg-pink-600/80 rounded-xl flex items-center justify-center text-white text-2xl group-hover:scale-110 transition shadow-lg group-hover:shadow-pink-500/50 relative z-10 border border-white/20">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div class="ml-5 relative z-10">
-                            <h4 class="text-white font-bold text-lg group-hover:text-pink-400 transition">Instagram</h4>
-                            <p class="text-gray-400">@imjopeh</p>
-                        </div>
-                    </a>
-                     <a href="#" class="glass-box flex items-center p-5 rounded-xl border border-red-500/20 hover:border-red-500/80 transition-all group hover:shadow-glow-md hover:-translate-y-1 relative overflow-hidden">
-                        <div class="absolute inset-0 bg-red-600/0 group-hover:bg-red-600/10 transition duration-500"></div>
-                        <div class="w-14 h-14 bg-red-600/80 rounded-xl flex items-center justify-center text-white text-2xl group-hover:scale-110 transition shadow-lg group-hover:shadow-red-500/50 relative z-10 border border-white/20">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="ml-5 relative z-10">
-                            <h4 class="text-white font-bold text-lg group-hover:text-red-400 transition">Youtube</h4>
-                            <p class="text-gray-400">Jopeh Dev Ch.</p>
-                        </div>
-                    </a>
+    <footer class="bg-black border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="https://via.placeholder.com/50" class="h-8 w-8 rounded-full" alt="Logo">
+                        <span class="text-2xl font-heading font-bold text-white">MappleID</span>
+                    </div>
+                    <p class="text-gray-400 text-sm max-w-xs">
+                        Membangun masa depan digital dengan kode yang rapi, efisien, dan desain yang menawan.
+                    </p>
                 </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="index.html" class="hover:text-primary">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary">About Me</a></li>
+                        <li><a href="portfolio.html" class="hover:text-primary">Portfolio</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-primary">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-primary">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm">© 2023 MappleID. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-github"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                <div class="relative">
-                    <div class="absolute inset-0 bg-primary/20 blur-3xl -z-10 rounded-2xl scale-95 animate-pulse duration-[3000ms]"></div>
-                    
-                    <form id="contactForm" class="glass-box p-8 rounded-2xl border border-primary/30 shadow-glow-sm relative z-10">
-                        <h3 class="text-2xl text-white font-heading font-bold mb-8 flex items-center gap-2">
-                            <i class="fas fa-paper-plane text-primary"></i> Send Message
-                        </h3>
-                        <div class="mb-6 group relative">
-                             <i class="fas fa-user absolute left-4 top-4 text-gray-500 group-focus-within:text-primary transition"></i>
-                            <input type="text" id="name" class="w-full bg-dark/50 border border-gray-700 rounded-xl py-3.5 pl-12 pr-4 text-white focus:border-primary focus:ring-1 focus:ring-primary/50 focus:shadow-glow-sm outline-none transition-all backdrop-blur-sm placeholder-gray-500" placeholder="Your Username" required>
-                        </div>
-                        <div class="mb-6 group relative">
-                            <i class="fas fa-envelope absolute left-4 top-4 text-gray-500 group-focus-within:text-primary transition"></i>
-                            <input type="email" id="email" class="w-full bg-dark/50 border border-gray-700 r
+    <script src="script.js"></script>
+</body>
+</html>
