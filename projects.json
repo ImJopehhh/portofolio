@@ -10,23 +10,23 @@
     "is_pinned": true
   },
   {
-    "title": "JopehGuard Bot",
+    "title": "NaturalSMP",
     "image": "https://placehold.co/600x350/1e293b/3b82f6?text=Discord+Bot",
-    "description": "Bot discord serbaguna untuk moderasi otomatis, sistem musik, dan log aktivitas server secara realtime.",
-    "tags": ["Node.js", "Discord.js", "API"],
-    "link_published": "#",
-    "link_code": "#",
-    "label": "Stable",
-    "is_pinned": false
-  },
-  {
-    "title": "Personal Website V1",
-    "image": "https://placehold.co/600x350/0f172a/64748b?text=Old+Portfolio",
-    "description": "Versi pertama website portofolio saya yang dibuat menggunakan HTML dan CSS murni tanpa framework.",
-    "tags": ["HTML", "CSS", "Legacy"],
+    "description": "-",
+    "tags": ["Minecraft", "Public", "Multiplayer"],
     "link_published": "#",
     "link_code": "#",
     "label": "Legacy",
+    "is_pinned": false
+  },
+  {
+    "title": "Catatan Keuangan",
+    "image": "https://placehold.co/600x350/0f172a/64748b?text=Catatan+Keuangan",
+    "description": "Website ini terbentuk karena kebutuhan mencatat keuangan secara digital dan simpel",
+    "tags": ["HTML", "CSS"],
+    "link_published": "#",
+    "link_code": "#",
+    "label": "Stable",
     "is_pinned": false
   }
 ]
