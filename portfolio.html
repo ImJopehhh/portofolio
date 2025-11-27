@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | JopehDeveloper</title>
+    <title>Portfolio | ImJopeh</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -25,7 +25,7 @@
 <body class="bg-gray-900 text-gray-100 flex flex-col min-h-screen">
 
     <nav class="w-full z-50 bg-gray-900 border-b border-gray-800 py-4 px-6 flex justify-between items-center sticky top-0">
-        <a href="index.html" class="flex items-center gap-2 text-white hover:text-brand transition font-heading font-bold">
+        <a href="/#portfolio" class="flex items-center gap-2 text-white hover:text-brand transition font-heading font-bold">
             <i class="fas fa-arrow-left"></i> Back to Home
         </a>
         <span class="font-heading font-bold text-xl tracking-wide text-brand">Portfolio Showcase</span>
@@ -37,83 +37,17 @@
             <h1 class="text-3xl md:text-4xl font-heading font-bold">My <span class="text-brand">Works</span></h1>
             <p class="text-gray-400 mt-2">Berikut adalah daftar project yang telah saya publikasikan.</p>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <div class="bg-gray-800 rounded-xl overflow-hidden border-2 border-brand shadow-[0_0_20px_rgba(220,38,38,0.3)] relative group hover:-translate-y-2 transition-all duration-300">
-                <div class="absolute top-3 left-3 bg-brand text-white text-xs font-bold px-2 py-1 rounded z-10">
-                    <i class="fas fa-star text-yellow-300"></i> Projek Unggulan
-                </div>
-                
-                <img src="https://placehold.co/600x350/111827/ef4444?text=Mapple+Project" class="w-full h-48 object-cover opacity-90 group-hover:opacity-100 transition">
-                
-                <div class="p-6">
-                    <h3 class="font-heading text-xl font-bold text-white mb-2">Mapple Project</h3>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-3">
-                        Ekosistem server Minecraft terbesar dengan integrasi web. Memiliki fitur Rank Sync, Economy, dan Anti-Cheat custom.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-gray-900 text-[10px] rounded text-gray-300">Minecraft</span>
-                        <span class="px-2 py-1 bg-gray-900 text-[10px] rounded text-gray-300">Web</span>
-                    </div>
-                    <div class="flex gap-3">
-                        <a href="#" class="flex-1 text-center py-2 bg-brand text-white text-sm font-bold rounded hover:bg-red-700 hover:shadow-neon transition">Published</a>
-                        <a href="#" class="flex-1 text-center py-2 bg-gray-700 text-white text-sm font-bold rounded hover:bg-gray-600 transition">Code</a>
-                    </div>
-                </div>
+        <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
+            <div class="col-span-full flex justify-center items-center">
+                <div class="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brand"></div>
             </div>
-
-            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-brand hover:shadow-neon relative group hover:-translate-y-2 transition-all duration-300">
-                <div class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded z-10">
-                    Stable
-                </div>
-                
-                <img src="https://placehold.co/600x350/1e293b/3b82f6?text=Discord+Bot" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition">
-                
-                <div class="p-6">
-                    <h3 class="font-heading text-xl font-bold text-white mb-2">JopehGuard Bot</h3>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-3">
-                        Bot discord serbaguna untuk moderasi otomatis, sistem musik, dan log aktivitas server secara realtime menggunakan Discord.js.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-gray-900 text-[10px] rounded text-gray-300">Node.js</span>
-                        <span class="px-2 py-1 bg-gray-900 text-[10px] rounded text-gray-300">Discord API</span>
-                    </div>
-                    <div class="flex gap-3">
-                        <a href="#" class="flex-1 text-center py-2 bg-brand text-white text-sm font-bold rounded hover:bg-red-700 hover:shadow-neon transition">Invite</a>
-                        <a href="#" class="flex-1 text-center py-2 bg-gray-700 text-white text-sm font-bold rounded hover:bg-gray-600 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="bg-gray-800 rounded-xl overflow-hidden border border-gray-700 hover:border-brand hover:shadow-neon relative group hover:-translate-y-2 transition-all duration-300">
-                <div class="absolute top-3 left-3 bg-gray-600 text-white text-xs font-bold px-2 py-1 rounded z-10">
-                    Legacy / Old
-                </div>
-                
-                <img src="https://placehold.co/600x350/0f172a/64748b?text=Old+Portfolio" class="w-full h-48 object-cover opacity-80 group-hover:opacity-100 transition">
-                
-                <div class="p-6">
-                    <h3 class="font-heading text-xl font-bold text-white mb-2">Portfolio V1</h3>
-                    <p class="text-gray-400 text-sm mb-4 line-clamp-3">
-                        Versi pertama website portofolio saya yang dibuat menggunakan HTML dan CSS murni tanpa framework.
-                    </p>
-                    <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-2 py-1 bg-gray-900 text-[10px] rounded text-gray-300">HTML</span>
-                        <span class="px-2 py-1 bg-gray-900 text-[10px] rounded text-gray-300">CSS</span>
-                    </div>
-                    <div class="flex gap-3">
-                        <a href="#" class="flex-1 text-center py-2 bg-brand text-white text-sm font-bold rounded hover:bg-red-700 hover:shadow-neon transition">Visit</a>
-                        <a href="#" class="flex-1 text-center py-2 bg-gray-700 text-white text-sm font-bold rounded hover:bg-gray-600 transition">Code</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </main>
 
     <footer class="bg-black py-6 mt-auto border-t border-gray-800 text-center">
         <p class="text-gray-500 text-sm">&copy; 2025 MappleID. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
