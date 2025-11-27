@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Mapple Project",
+    "image": "https://placehold.co/600x350/111827/ef4444?text=Mapple+Project",
+    "description": "Ekosistem server Minecraft terbesar dengan integrasi web. Memiliki fitur Rank Sync, Economy, dan Anti-Cheat custom.",
+    "tags": ["Minecraft", "Web Integration", "Java"],
+    "link_published": "#",
+    "link_code": "#",
+    "label": "Projek Unggulan",
+    "is_pinned": true
+  },
+  {
+    "title": "JopehGuard Bot",
+    "image": "https://placehold.co/600x350/1e293b/3b82f6?text=Discord+Bot",
+    "description": "Bot discord serbaguna untuk moderasi otomatis, sistem musik, dan log aktivitas server secara realtime.",
+    "tags": ["Node.js", "Discord.js", "API"],
+    "link_published": "#",
+    "link_code": "#",
+    "label": "Stable",
+    "is_pinned": false
+  },
+  {
+    "title": "Personal Website V1",
+    "image": "https://placehold.co/600x350/0f172a/64748b?text=Old+Portfolio",
+    "description": "Versi pertama website portofolio saya yang dibuat menggunakan HTML dan CSS murni tanpa framework.",
+    "tags": ["HTML", "CSS", "Legacy"],
+    "link_published": "#",
+    "link_code": "#",
+    "label": "Legacy",
+    "is_pinned": false
+  }
+]
