@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- 1. SCROLL ANIMATION OBSERVER ---
     const observerOptions = {
-        threshold: 0.1 // Animasi mulai saat 10% elemen terlihat
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Cari semua elemen yang punya class 'reveal'
     const revealElements = document.querySelectorAll('.reveal');
     revealElements.forEach(el => {
-        // Set state awal (hidden) via JS biar kalau JS mati konten tetap muncul (fallback)
         el.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-700');
         observer.observe(el);
     });
