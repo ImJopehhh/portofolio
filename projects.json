@@ -1,13 +1,23 @@
 [
   {
     "title": "Mapple Project",
-    "image": "https://placehold.co/600x350/111827/ef4444?text=Mapple+Project",
+    "image": "assets/mapplephoto.png",
     "description": "Ekosistem server Minecraft terbesar dengan integrasi web. Memiliki fitur Rank Sync, Economy, dan Anti-Cheat custom.",
     "tags": ["Minecraft", "Web Integration", "Java"],
-    "link_published": "#",
+    "link_published": "https://mapple.jopehdev.my.id",
     "link_code": "#",
     "label": "Projek Unggulan",
     "is_pinned": true
+  },
+  {
+    "title": "NoteUp!",
+    "image": "assets/noteupphoto.png",
+    "description": "Website ini terbentuk karena kebutuhan mencatat keuangan secara digital dan simpel",
+    "tags": ["HTML", "CSS", "Money"],
+    "link_published": "https://noteup.jopehdev.my.id",
+    "link_code": "#",
+    "label": "Stable",
+    "is_pinned": false
   },
   {
     "title": "NaturalSMP",
@@ -17,16 +27,6 @@
     "link_published": "#",
     "link_code": "#",
     "label": "Legacy",
-    "is_pinned": false
-  },
-  {
-    "title": "Catatan Keuangan",
-    "image": "https://placehold.co/600x350/0f172a/64748b?text=Catatan+Keuangan",
-    "description": "Website ini terbentuk karena kebutuhan mencatat keuangan secara digital dan simpel",
-    "tags": ["HTML", "CSS"],
-    "link_published": "#",
-    "link_code": "#",
-    "label": "Stable",
     "is_pinned": false
   }
 ]
