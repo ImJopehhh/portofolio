@@ -5,7 +5,6 @@
     "description": "Ekosistem server Minecraft terbesar dengan integrasi web. Memiliki fitur Rank Sync, Economy, dan Anti-Cheat custom.",
     "tags": ["Minecraft", "Web Integration", "Java"],
     "link_published": "https://mapple.jopehdev.my.id",
-    "link_code": "#",
     "label": "Projek Unggulan",
     "is_pinned": true
   },
@@ -15,7 +14,6 @@
     "description": "Website ini terbentuk karena kebutuhan mencatat keuangan secara digital dan simpel",
     "tags": ["HTML", "CSS", "Money"],
     "link_published": "https://noteup.jopehdev.my.id",
-    "link_code": "#",
     "label": "Stable",
     "is_pinned": false
   },
@@ -25,7 +23,6 @@
     "description": "-",
     "tags": ["Minecraft", "Public", "Multiplayer"],
     "link_published": "#",
-    "link_code": "#",
     "label": "Legacy",
     "is_pinned": false
   }
