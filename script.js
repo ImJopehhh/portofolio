@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
                             
                             <div class="flex gap-3">
                                 <a href="${project.link_published}" class="flex-1 text-center py-2 bg-brand text-white text-sm font-bold rounded hover:bg-red-700 hover:shadow-neon transition">Visit</a>
-                                <a href="${project.link_code}" class="flex-1 text-center py-2 bg-gray-700 text-white text-sm font-bold rounded hover:bg-gray-600 transition">Code</a>
                             </div>
                         </div>
                     </div>
